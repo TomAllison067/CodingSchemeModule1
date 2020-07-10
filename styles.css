@@ -168,7 +168,7 @@ p {
 #quote {
   background-color: var(--color-darkerwhite);
   max-width: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   padding-top: 1rem;
   min-height: 100vh;
 }
@@ -193,6 +193,7 @@ p {
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
+  border-radius: 5px;
 }
 
 .grid-cell ul {
@@ -218,18 +219,27 @@ p {
 .button-div {
   padding: 2rem 2rem;
 }
+
 .submit-btn {
   display: block;
   margin: 1rem auto;
   font-size: 2rem;
   padding: 0.2rem;
+  color: #fff;
+  background-color: var(--color-red);
+  border-color: var(--color-darkred);
+}
+
+.submit-btn:hover{
+  background-color: #c00;
+  border-color: #a00;
 }
 
 #price-div {
   display: none;
   background-color: var(--color-offwhite);
   max-width: 50rem;
-  margin: 0 auto;
+  margin: 5rem auto;
   border-radius: 4rem;
   border: 2px solid black;
 }
@@ -352,3 +362,8 @@ hr {
     font-size: 1.5rem;
   }
 }
+
+
+
+
+
