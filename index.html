@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <title>Pegasus Starships</title>
+    </head>
+
+    <body>
+        <nav id="navbar" class="navbar">
+            <p class="nav-logo">PEGASUS SYSTEMS</p>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#quote">Quote</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <section id="about">
+                <div class="headline-div">
+                    <h1 id="product-headline" class="section-header">The Starship Pegasus</h1>
+                    <h2 id="product-subtitle">Air supremacy straight from Mars</h2>
+                </div>
+                <img src="https://i.ibb.co/whMq0TN/matthew-t-rader-ZZOE6-v-Vr-RM-unsplash.jpg" id="splash-img"
+                    alt="Picture of a UFO">
+                <div class="description">
+                    <p>To get a price, fill in the form below and press 'Submit'.</p>
+                    <p>The price will appear on the page beneath the form (thanks to JavaScript).</p>
+                    <br>
+                    <p>To see my attempt at responsiveness, zoom in and out. Also note the columns of the quote form
+                        auto-fitting.</p>
+                </div>
+            </section>
+
+            <section id="quote">
+                <div class="headline-div">
+                    <h1 id="quote-header">Get a quote</h1>
+                </div>
+                <form id="quote-form" name="quote-form" onsubmit="calculatePrice()">
+                    <div class="grid">
+
+                        <div class="grid-cell">
+                            <h3 class="cell-header">
+                                Weapons
+                            </h3>
+                            <ul class="cell-content">
+                                <li><label><input type="number" id="laser-cannon" name="laserCannon" min="0" max="4"
+                                            value="0">Laser Cannon - £50 mil</label>
+                                </li>
+                                <li><label><input type="number" id="missile-launcher" name="missileLauncher" min="0"
+                                            max="4" value="0">Missile Launcher - £40 mil</label>
+                                </li>
+                                <li><label><input type="number" id="machine-gun" name="machineGun" min="0" max="4"
+                                            value="0">Machine Gun - £30 mil</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="grid-cell">
+                            <h3 class="cell-header">
+                                Engine Type
+                            </h3>
+                            <ul class="cell-content">
+                                <li><label><input type="radio" id="photon" name="engine" value="enginePhoton"
+                                            checked>Photon
+                                        - £75 mil</label>
+                                </li>
+                                <li><label><input type="radio" id="plasma" name="engine" value="enginePlasma">Plasma -
+                                        £80
+                                        mil</label>
+                                </li>
+                                <li><label><input type="radio" id="warp-drive" name="engine"
+                                            value="engineWarpDrive">Warp
+                                        Drive - £100 mil</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-cell">
+                            <h3 class="cell-header">
+                                Extras
+                            </h3>
+                            <ul class="cell-content">
+                                <li><label><input type="checkbox" name="radar" value="radar">Radar - £60 mil</label>
+                                </li>
+                                <li><label><input type="checkbox" id="flares" name="flares" value="flares">Flares - £5
+                                        mil</label></li>
+                                <li><label><input type="checkbox" id="cloaking-device" name="cloakingDevice"
+                                            value="cloakingDevice">Cloaking Device - £300 mil</label></li>
+                                <li><label><input type="checkbox" id="escape-pods" name="escapePods"
+                                            value="escape-pods">Escape Pods - £200 mil</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="grid-cell">
+                            <h3 class="cell-header">
+                                Special Requests
+                            </h3>
+                            <div class="cell-content">
+                                <textarea class="input-textarea" name="special-requests" id="special-requests"
+                                    placeholder="Enter any special requests here..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-div">
+                        <button type="submit" id="submit" onclick="submit" name="submit-btn" value="submit"
+                            class="submit-btn">Get quote</button>
+                    </div>
+                </form>
+                <div id="price-div">
+                    <p>Your new ship will cost:</p>
+                    <p>£<span id="price"></span> million</p>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="contact">
+                <header id="contact-header" class="contact-header">
+                    <h2>Get in touch</h2>
+                </header>
+                <ul class="contact-list">
+                    <li>Phone Us: 0118 12345678</li>
+                    <li>Email: PegasusStarships@example.com</li>
+                </ul>
+                <hr>
+            </section>
+        </main>
+        <script src="scripts.js"></script>
+    </body>
+
+</html>
