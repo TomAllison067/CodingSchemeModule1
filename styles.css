@@ -239,7 +239,7 @@ p {
   display: none;
   background-color: var(--color-offwhite);
   max-width: 50rem;
-  margin: 5rem auto;
+  margin: 5rem auto 5rem;
   border-radius: 4rem;
   border: 2px solid black;
 }
@@ -325,11 +325,24 @@ hr {
     width: 100%;
     font-size: 1.5rem;
   }
-
-  .headline-div {
-    margin-top: 8rem;
+  
+  .description {
+    max-width: 80vw;
+    font-size: 1rem;
   }
-
+  
+  .description p {
+    font-size: 1.5rem;
+  }
+  
+  .headline-div {
+    margin-top: 3rem;
+  }
+  
+  #quote {
+    height: auto;
+  }
+  
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 700px));
@@ -354,16 +367,23 @@ hr {
     height: 8rem;
   }
   
+  .button-div {
+  padding: 0.5rem 0.5rem;
+}
   .submit-btn {
     font-size: 1.5rem;
   }
+  
+  #price-div {
+  display: none;
+  background-color: var(--color-offwhite);
+  max-width: 90vw;
+  margin: 1rem auto;
+  border-radius: 4rem;
+  border: 2px solid black;
+}
   
   .contact-list li {
     font-size: 1.5rem;
   }
 }
-
-
-
-
-
