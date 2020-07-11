@@ -272,6 +272,12 @@ hr {
   margin-bottom: 5rem;
 }
 
+#launch-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /** MOBILE / RESPONSIVE ELEMENT **/
 @media (max-width: 900px) {
   h1 {
